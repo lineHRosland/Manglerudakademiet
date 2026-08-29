@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manglerudakademiet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+    <div class="nav">
+
+        <nav>
+            <a href="index.html"> Hjem </a>
+            <a href="program.html"> Program </a>
+            <a href="medlemskap_priser.html"> Medlemskap og priser </a>
+            <a href="kontakt.html"> Kontakt oss </a>
+            <a href="om_oss.html"> Arkiv </a>
+            <a href="logg_inn.html"> Logg inn </a>
+        </nav>
+
+    </div>
+
+    <main>
+    <div class="header">
+        <header>
+            <h1> Manglerud Gård seniorakademiet<br></h1>
+            <p>Manglerud Gård Seniorakademi inviterer til samfunnsaktuelle temaforedrag og kåserier. </p>
+        </header>
+
+        <div class="image-slider">
+
+            <button class="slider-btn prev">&lt;</button>
+
+                <div class="image-wrapper"> 
+
+                    <img id="slider-image"
+                        src="./images/hjem/Manglerud-gard.png"
+                        alt="Bilde av Manglerud Gård klarer ikke å laste inn.">
+
+                    <div class="image-credit" id="image-credit">
+                        Foto: Riksantikvaren / Nasjonalbibloteket
+                    </div>
+
+
+                </div>
+
+            <button class="slider-btn next">&gt;</button>
+
+
+            
+
+<script>
+
+const slides = [
+    {
+        image: "./images/hjem/Manglerud-gard.png",
+        credit: "Foto: Riksantikvaren / Nasjonalbiblioteket"
+    },
+    {
+        image: "./images/hjem/foredrag.jpg",
+        credit: "Foto: Pål Rosland"
+    },
+    {
+        image: "./images/hjem/test.jpg",
+        credit: "Foto: xxxx"
+    }
+];
+
+let currentIndex = 0;
+
+const image = document.getElementById("slider-image");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const credit = document.getElementById("image-credit");
+
+
+
+function updateSlider() {
+
+    image.src = slides[currentIndex].image;
+
+    credit.textContent = slides[currentIndex].credit;
+
+    prevBtn.style.display =
+        currentIndex === 0 ? "none" : "block";
+
+    nextBtn.style.display =
+        currentIndex === slides.length - 1
+            ? "none"
+            : "block";
+}
+
+nextBtn.addEventListener("click", () => {
+    if (currentIndex < slides.length - 1) {
+        currentIndex++;
+        updateSlider();
+    }
+});
+
+prevBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+    }
+});
+
+updateSlider();
+</script>
+
+
+        </div>
+    </div>    
+        
+    <div class="info">
+        <h2>Om oss</h2>
+
+          <p> 
+
+        Seniorakademiet holder til på Manglerud Gård, sentralt plassert ved Manglerud T-banestasjon og Manglerud senter.
+         Foredragene finner sted i storstua på gården, som er et av Østensjø bydels <a class="naermiljosenter-link" href="https://www.oslo.kommune.no/natur-kultur-og-fritid/seniorsenter/manglerud-gard-narmiljosenter/" target="_blank">nærmiljøsentre</a>. 
+
+         <br> <br>
+
+        Foredragene starter kl. 14.30, omtrent annenhver tirsdag. 
+        I pausen serveres kaffe, te og noe å spise, før vi avslutter med spørsmål og diskusjon frem til kl. 16.00.
+
+        </p>
+          
+             
+    
+    </div>
+    <div class="viktig_melding">
+
+    </div>
+    <div class="neste_arrangement">
+        <h2>
+            Neste arrangement   
+        </h2>
+       <div class="event">
+                <div class="event-image">
+                    <img src="./images/program/geirO.avif" alt="Bilde av Geir O. Pedersen klarer ikke å laste inn.">
+                    <div class="image-credit-program" >
+                        Foto: SALVATORE DI NOLFI/AP/NTB Scanpix
+                    </div>
+                </div>
+                <div class="eventleft-content">
+                    <h5 class="event-date"><strong>Geir O. Pedersen</strong> 15. september</h5>
+                    <h3>Aktuelt om midtøsten</h3>
+                    <p>
+                        Geir O. Pedersen, tidligere norsk FN-ambassadør og FNs spesialutsending i Syria og Midtøsten, gir et skarpt og oppdatert bilde av situasjonen i Midtøsten. Den videre utviklingen frem mot september vil ha stor betydning for hvilke temaer som står sentralt i foredraget.
+                    </p>
+                </div>
+        </div>
+    </div>
+    <div class="viktig_info">
+            <div class="når">   
+                    <h5>
+                        Når
+                    </h5>
+                    <h3>
+                        Tirsdag<br>
+                        14:30 - 16:00
+                    </h3>
+             
+            </div>
+            <div class="hvor">   
+                    <h5>
+                        Hvor
+                    </h5>
+                    <h3>
+                        Manglerud gård<br>
+                        <a class="map-link" href="https://maps.app.goo.gl/bWYGeSXSGH5A2kw19" target="_blank"> Byggveien 15, 0680 Oslo </a>
+                    </h3>
+                  
+            </div>
+            <div class="pris">   
+                    <h5>
+                        Pris
+                    </h5>
+                    <h3>
+                        Medlem:      150 kr<br>
+                        Ikke-medlem: 180 kr
+                    </h3>
+                 
+            </div>
+        </div>
+    </main>
+     <div class="footer">
+        <footer>
+            <p>Copyright @ 2026 Manglerud Gård seniorakademi | Utviklet av Line Hyggen Rosland</p>
+           
+        </footer>
+
+    </div>
+   
+   
+</body>
+</html>
