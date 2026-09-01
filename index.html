@@ -26,92 +26,19 @@
     <main>
     <div class="header">
         <header>
-            <h1> Manglerud Gård seniorakademiet<br></h1>
+            <h1> Manglerud Gård seniorakademi<br></h1>
             <p>Manglerud Gård Seniorakademi inviterer til samfunnsaktuelle temaforedrag og kåserier. </p>
         </header>
 
-        <div class="image-slider">
-
-            <button class="slider-btn prev">&lt;</button>
-
-                <div class="image-wrapper"> 
-
-                    <img id="slider-image"
+        <div class="image_header">
+            <img id="header-image1"
                         src="./images/hjem/Manglerud-gard.png"
                         alt="Bilde av Manglerud Gård klarer ikke å laste inn.">
-
-                    <div class="image-credit" id="image-credit">
-                        Foto: Riksantikvaren / Nasjonalbibloteket
-                    </div>
-
-
-                </div>
-
-            <button class="slider-btn next">&gt;</button>
-
-
-            
-
-<script>
-
-const slides = [
-    {
-        image: "./images/hjem/Manglerud-gard.png",
-        credit: "Foto: Riksantikvaren / Nasjonalbiblioteket"
-    },
-    {
-        image: "./images/hjem/foredrag.jpg",
-        credit: "Foto: Pål Rosland"
-    },
-    {
-        image: "./images/hjem/test.jpg",
-        credit: "Foto: xxxx"
-    }
-];
-
-let currentIndex = 0;
-
-const image = document.getElementById("slider-image");
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
-const credit = document.getElementById("image-credit");
-
-
-
-function updateSlider() {
-
-    image.src = slides[currentIndex].image;
-
-    credit.textContent = slides[currentIndex].credit;
-
-    prevBtn.style.display =
-        currentIndex === 0 ? "none" : "block";
-
-    nextBtn.style.display =
-        currentIndex === slides.length - 1
-            ? "none"
-            : "block";
-}
-
-nextBtn.addEventListener("click", () => {
-    if (currentIndex < slides.length - 1) {
-        currentIndex++;
-        updateSlider();
-    }
-});
-
-prevBtn.addEventListener("click", () => {
-    if (currentIndex > 0) {
-        currentIndex--;
-        updateSlider();
-    }
-});
-
-updateSlider();
-</script>
-
-
+            <img id="header-image2"
+                        src="./images/hjem/foredrag.jpg"
+                        alt="Bildet klarer ikke å laste inn.">
         </div>
+
     </div>    
         
     <div class="info">
@@ -124,8 +51,12 @@ updateSlider();
 
          <br> <br>
 
-        Foredragene starter kl. 14.30, omtrent annenhver tirsdag. 
+        Foredragene starter kl. 14.30, vanligvis annenhver tirsdag. 
         I pausen serveres kaffe, te og noe å spise, før vi avslutter med spørsmål og diskusjon frem til kl. 16.00.
+
+        <br> <br>
+
+        Denne nettsiden fungerer foreløpig best på PC. Mobiltilpasning er under utvikling, og vi jobber med å gi en like god brukeropplevelse på mobil og nettbrett.
 
         </p>
           
@@ -186,6 +117,86 @@ updateSlider();
                     </h3>
                  
             </div>
+        </div>
+
+    
+        <div class="image-slider">
+
+            <button class="slider-btn prev">&lt;</button>
+
+                <div class="image-wrapper"> 
+
+                    <img id="slider-image"
+                        src="./images/hjem/Manglerud-gard.png"
+                        alt="Bilde av Manglerud Gård klarer ikke å laste inn.">
+
+                    <div class="image-credit" id="image-credit">
+                        Foto: Pål Rosland
+                    </div>
+
+
+                </div>
+
+            <button class="slider-btn next">&gt;</button>
+
+
+            
+
+<script>
+
+const slides = [
+    {
+        image: "./images/hjem/Manglerud-gard.png",
+        credit: "Foto: Pål Rosland"
+    },
+    {
+        image: "./images/hjem/foredrag.jpg",
+        credit: "Foto: Pål Rosland"
+    }
+];
+
+let currentIndex = 0;
+
+const image = document.getElementById("slider-image");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const credit = document.getElementById("image-credit");
+
+
+
+function updateSlider() {
+
+    image.src = slides[currentIndex].image;
+
+    credit.textContent = slides[currentIndex].credit;
+
+    prevBtn.style.display =
+        currentIndex === 0 ? "none" : "block";
+
+    nextBtn.style.display =
+        currentIndex === slides.length - 1
+            ? "none"
+            : "block";
+}
+
+nextBtn.addEventListener("click", () => {
+    if (currentIndex < slides.length - 1) {
+        currentIndex++;
+        updateSlider();
+    }
+});
+
+prevBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+    }
+});
+
+updateSlider();
+</script>
+
+
         </div>
     </main>
      <div class="footer">
