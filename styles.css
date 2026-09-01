@@ -1,0 +1,594 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+
+main {
+    flex: 1;
+}
+
+.header p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+p {
+    font-family: "Rethink sans", sans-serif;
+    color: #333333;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+h1 {
+    font-family: "Rethink Sans", sans-serif;
+    color: #000000;
+    font-size: 56px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Rethink Sans", sans-serif;
+    color: #000000;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+h3 {
+    font-family: "Rethink Sans", sans-serif;
+    color: #000000;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+}
+
+.map-link {
+    font-family: "Rethink Sans", sans-serif;
+    color: #000000;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.map-link:hover {
+    color: #666666;
+}
+
+
+h5 {
+    font-family: "Rethink sans", sans-serif;
+    color: #3D1A0D;
+    font-size: 17px;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    font-weight: 400;
+}
+
+
+
+.nav {
+    padding: 20px 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+
+    font-family: "Rethink Sans", sans-serif;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #666666;
+}
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.viktig_info {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.viktig_info h5 {
+    margin-bottom: 13px;
+}
+
+
+.når,
+.hvor,
+.pris {
+    flex: 1;
+    text-align: center;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto 40px auto;
+
+    padding: 24px;
+    gap: 40px;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+
+.event:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.event-image,
+.eventleft-content,
+.eventright-content {
+    flex: 1;
+
+}
+
+.event-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-credit-program {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom: 0;
+
+    padding: 12px 16px;
+
+    background: rgba(0,0,0,0.5);
+    color: white;
+
+    font-family: "Rethink Sans", sans-serif;
+    font-size: 13px;
+
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+
+
+}
+
+.image_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 60px auto 80px auto;
+    padding: 0 20px;
+}
+
+.image_header img {
+    width: 48%;
+    max-width: 550px;
+    height: 350px;
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.image_header img:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+
+.event-image:hover .image-credit-program {
+    transform: translateY(0);
+}
+
+
+.event-image img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+
+    border-radius: 8px;
+}
+
+.eventleft-content,
+.eventright-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.eventleft-content h3,
+.eventleft-content p,
+.eventleft-content h5{
+    text-align: left;
+}
+
+.eventright-content h3,
+.eventright-content p,
+.eventright-content h5 {
+    text-align: right;
+}
+
+.event-date {
+    margin-bottom: 13px;
+}
+
+.eventleft-content h3,
+.eventright-content h3 {
+    margin-top: 0;
+}
+
+.nav {
+    padding: 20px 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+
+    font-family: "Rethink Sans", sans-serif;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #666666;
+}
+
+.footer {
+    width: 100%;
+    margin: 100px auto 40px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+
+    border-top: 1px solid #E5E5E5;
+
+    text-align: center;
+
+}
+
+.footer p {
+    font-size: 12px;
+    color: #5B5B5B;
+    margin: 10px 0;
+}
+
+
+.header-image {
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    display: block;
+
+    margin: 0 auto;
+
+}
+
+.neste_arrangement {
+
+    margin-top: 150px;
+
+}
+
+.program {
+
+    margin-top: 130px;
+
+}
+
+
+.board {
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+.leader-card {
+    width: 420px;
+    margin: 0 auto 60px auto;
+
+    padding: 30px;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+
+    text-align: center;
+
+    transition: 0.2s ease;
+}
+
+.leader-card:hover {
+    transform: translateY(-4px);
+}
+
+.board-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.board-card {
+    padding: 24px;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+
+    text-align: center;
+
+    transition: 0.2s ease;
+}
+
+.board-card:hover {
+    transform: translateY(-4px);
+}
+
+.board-card h5,
+.leader-card h5 {
+    margin: 0 0 8px 0;
+}
+
+.board-card h3,
+.leader-card h3 {
+    margin: 0 0 12px 0;
+}
+
+.board-card p,
+.leader-card p {
+    margin: 4px 0;
+    text-align: center;
+}
+
+
+.medlemskap,
+.prispris {
+    margin: 80px auto;
+}
+
+.medlemskap-content,
+.pris-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.membership-list {
+    font-family: "Rethink Sans", sans-serif;
+    color: #333333;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    font-weight: 400;
+
+    margin-top: 10px;
+    padding-left: 28px;
+}
+
+.membership-list li {
+    margin-bottom: 16px;
+}
+
+
+.pris-content h3,
+.medlemskap-content h3 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: left;
+
+}
+
+.pris-content p,
+.medlemskap-content p {
+    text-align: left;
+    margin-top: 0;
+}
+
+
+.download-section {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 20px;
+
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.download-btn {
+    background-color: #3D1A0D;
+    color: white;
+    text-decoration: none;
+
+    padding: 12px 24px;
+    border-radius: 8px;
+
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 500;
+
+    text-align: center;
+
+    transition: 0.2s ease;
+}
+
+.download-btn:hover {
+    background-color: #631010;
+    transform: translateY(-2px);
+}
+
+.board-title {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+
+.image-slider {
+    position: relative;
+    max-width: 1000px;
+    height: 550px;      /* fast høyde */
+    margin: 60px auto 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image-credit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 15px 20px;
+
+    background: rgba(0,0,0,0.5);
+    color: white;
+
+    font-family: "Rethink Sans", sans-serif;
+    font-size: 14px;
+
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.image-slider:hover .image-credit {
+    transform: translateY(0);
+}
+
+.image-slider img {
+    max-width: 100%;
+    max-height: 100%;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(0,0,0,0.5);
+    color: white;
+
+    font-size: 24px;
+    cursor: pointer;
+
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+.image-slider:hover .slider-btn {
+    opacity: 1;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.image-wrapper {
+    position: relative;
+
+    height: auto;
+    width: auto;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+
+
+.image-wrapper img {
+    display: block;
+    max-height: 550px;
+    max-width: 100%;
+}
+
+
+
+
+.info {
+    max-width: 800px;
+    margin: 120px auto 0 auto;
+}
+
+
+
+
