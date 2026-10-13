@@ -22,6 +22,16 @@ main {
 
 
 p,
+ul{
+    font-family: "Rethink sans", sans-serif;
+    color: #333333;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    font-weight: 400;
+    text-align: center;
+}
+
 ul,
 li{
     font-family: "Rethink sans", sans-serif;
@@ -30,10 +40,8 @@ li{
     line-height: 130%;
     letter-spacing: -0.03em;
     font-weight: 400;
-    text-align: center;
-
+    text-align: left;
 }
-
 h1 {
     font-family: "Rethink Sans", sans-serif;
     color: #000000;
