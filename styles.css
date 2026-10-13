@@ -21,7 +21,9 @@ main {
 }
 
 
-p {
+p,
+ul,
+li{
     font-family: "Rethink sans", sans-serif;
     color: #333333;
     font-size: 18px;
