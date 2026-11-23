@@ -238,8 +238,10 @@ nav a:hover {
 
 
 .event-image img {
-    width: 70%;
-    max-height: 100px;
+    width: auto;
+    height: auto;
+    max-width: 70%;
+    max-height: 300px;
     display: block;
     margin: 0 auto;
 
